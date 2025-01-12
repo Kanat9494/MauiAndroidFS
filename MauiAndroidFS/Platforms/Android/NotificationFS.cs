@@ -42,8 +42,6 @@ internal class NotificationFS : Service
 
     void TimerElapsed(object state)
     {
-        AndroidServiceManager.IsRunning = true;
-
         BadgeNumber++;
 
         string timeString = $"Time: {DateTime.Now.ToLongTimeString()}";

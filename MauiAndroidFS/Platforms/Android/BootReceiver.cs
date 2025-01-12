@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
+using Android.Net;
 using Android.Widget;
 using AndroidX.Core.Content;
 
@@ -19,5 +20,7 @@ public class BootReceiver : BroadcastReceiver
 
             ContextCompat.StartForegroundService(context, serviceIntent);
         }
+
     }
+
 }
